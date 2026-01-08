@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | My Personal Website</title>
-    <link rel="icon" type="image/x-icon" href="/image/icon.png">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <video autoplay muted loop id="bg-video">
-        <source src="/video/background.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
+        <source src="video/background.mp4" type="video/mp4">
     </video>
 
 <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 40px; background-color: #000080; border-bottom: 1px solid #ddd;">
@@ -36,7 +35,7 @@
         <p>Hello! I am Amir and this is my official website which contain information about me</p>
         
         <div style="text-align:center; margin: 20px 0;">
-            <img src="/image/pfp.png" alt="My Profile Picture" width="250" style="border: 5px solid #000080; border-radius: 10px;">
+            <img src="image/pfp.png" alt="My Profile Picture" width="250" style="border: 5px solid #000080; border-radius: 10px;">
             <p><i>I am single</i></p>
         </div>
 
@@ -93,7 +92,6 @@
         }
     }
 
-    // This ensures music starts the first time a user clicks anywhere on the page
     document.body.addEventListener('click', function() {
         if (myAudio.paused) {
             myAudio.play().catch(error => console.log("Autoplay prevented:", error));
@@ -102,4 +100,5 @@
     }, { once: true });
 </script>
 </body>
+
 </html>
